@@ -13,8 +13,8 @@
 
 
 ### [Effective java](https://github.com/jaehyeon7217/TIL/tree/main/effective_java)
-### [01장]()
+### [01장](https://github.com/jaehyeon7217/TIL/tree/main/effective_java/1%EC%9E%A5)
 - [들어가며](https://github.com/jaehyeon7217/TIL/blob/main/effective_java/01_%EB%93%A4%EC%96%B4%EA%B0%80%EA%B8%B0.md)
 
-### 02장 객체의 생성과 파괴
+### [02장 객체의 생성과 파괴](https://github.com/jaehyeon7217/TIL/tree/main/effective_java/2%EC%9E%A5)
 - [Item 01. 생성자 대신 정적 팩터리 메서드를 고려하라](effective_java/02_Item_01.md)
