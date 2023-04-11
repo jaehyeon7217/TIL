@@ -95,3 +95,5 @@ column 4 : password varchar
 
 
 
+-> unsigned int 를 사용한다면 42억개까지 id로 사용가능한데 굳이 bigint를 쓰면 속도도 느리고 불필요하다.
+
