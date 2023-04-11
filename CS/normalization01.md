@@ -1,3 +1,4 @@
+# 2023-04-10
 Table_name : mission
 
 column 1 : id(Pk) int
@@ -38,7 +39,7 @@ end_time - start_time은 duration
 
 따라서 in_progress, duration은 필요없음
 
-
+# 2023-04-11 AM
 
 Table_name : user
 
@@ -53,15 +54,15 @@ column 3 : gender boolean
 PK를 VARCHAR로 쓸 때 문제점
 
 01. white space 문자가 들어가면 인식하기 어려움
-2. 
+
  -> 오타나 눈에 보이지 않는 문자때문에 오류가 날 수 있다.
  
 02. join시 속도가 느리다.
-3. 
+
  -> 정수형 int보다 느리다.
  
 03. varchar 수정 가능성이 있다.
-4. 
+
  -> 수정할 가능성이 있기 때문에 위험하다.
  
  
@@ -82,6 +83,7 @@ column 4 : gender boolean
 
  
  ---
+ # 2023-04-11 PM
  
 Table_name : user
 
