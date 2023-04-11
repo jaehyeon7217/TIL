@@ -81,7 +81,17 @@ column 3 : name varchar
 column 4 : gender boolean
 
  
+ ---
  
+Table_name : user
+
+column 1 : id(pk) bigint
+
+column 2 : email varchar
+
+column 3 : name varchar
+
+column 4 : password varchar
 
 
 
