@@ -99,3 +99,75 @@ column 4 : password varchar
 
 -> unsigned int 를 사용한다면 42억개까지 id로 사용가능한데 굳이 bigint를 쓰면 속도도 느리고 불필요하다.
 
+---
+Table_name : user
+
+column 1 : id(pk) int
+
+column 2 : email varchar
+
+column 3 : name varchar
+
+column 4 : nickname varchar
+
+column 5 : password varchar
+
+column 6 : birth date
+
+column 7 : gender boolean
+
+column 8 : role int
+
+column 9 : thumb varchar
+
+column 10 : subscribe int
+
+column 11 : email_notify boolean
+
+column 12 : sms_notify boolean
+
+column 13 : push_alarm boolean
+
+-> 너무 많음 보통 7~8개?
+
+-
+
+변경 후
+
+Table_name : user
+
+column 1 : id(pk) int
+
+column 2 : email varchar
+
+column 3 : name varchar
+
+column 4 : nickname varchar
+
+column 5 : password varchar
+
+column 6 : birth date
+
+column 7 : gender boolean
+
+column 8 : role int
+
+column 9 : thumb varchar
+
+-
+
+Table_name : config
+
+column 1 : id(pk) int
+
+column 2 : subscribe int
+
+column 3 : email_notify boolean
+
+column 4 : sms_notify boolean
+
+column 5 : push_alarm boolean
+
+column 6  : user_id(FK) int
+
+#### 기능별로 나누어서 관리
