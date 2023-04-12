@@ -1,32 +1,22 @@
 # 2023-04-10
-Table_name : mission
-
-column 1 : id(Pk) int
-
-column 2 : complate boolean
-
+```
+Table_name : mission   
+column 1 : id(Pk) int   
+column 2 : complate boolean   
 column 3 : complate_time timestamp
+```
 
-
-일 때,
-
-완료 여부와 완료 시간이 있는데 이때 완료 여부는 필요없음
-
--> 완료 시간이 찍히면 완료, null이면 미완료
-
-
-Table_name : conference
-
-column 1 : id(Pk) int
-
+일 때,   
+완료 여부와 완료 시간이 있는데 이때 완료 여부는 필요없음   
+-> 완료 시간이 찍히면 완료, null이면 미완료   
+```
+Table_name : conference   
+column 1 : id(Pk) int   
 column 2 : start_time timstamp
-
 column 3 : end_time timestamp
-
 column 4 : in_progress boolean
-
 column 5 : duration int
-
+```
 
 
 일 때,
@@ -183,7 +173,7 @@ Response를 반환할 때
 
 body{
 
- "status" : "success",
+\t "status" : "success",
 
  "data" : {
  
