@@ -100,6 +100,7 @@ column 4 : password varchar
 -> unsigned int 를 사용한다면 42억개까지 id로 사용가능한데 굳이 bigint를 쓰면 속도도 느리고 불필요하다.
 
 ---
+# 2023-04-12 AM
 Table_name : user
 
 column 1 : id(pk) int
@@ -171,3 +172,59 @@ column 5 : push_alarm boolean
 column 6  : user_id(FK) int
 
 #### 기능별로 나누어서 관리
+
+---
+
+# 2023-04-12 PM
+
+Response를 반환할 때
+
+200 OK
+
+body{
+
+ "status" : "success",
+
+ "data" : {
+ 
+   "title" : "sample",
+ 
+   "content" : "Hello World"
+ 
+  }
+ 
+ }
+ 
+ 401 Unauthorized
+ 
+ body{
+ 
+  "status" : "failed",
+ 
+  "msg" : "no Authentication"
+ 
+ }
+ 
+ 으로 준다면, 상태(200, 401)와 status가 2번씩 전송되어 어느 기준으로 해야하는지 애매할 수 있음
+ 
+ 따라서 상태(200, 401)만 주는 것이 바람직.
+ 
+ 200 OK
+
+body{
+ 
+  "title" : "sample",
+ 
+  "content" : "Hello World"
+ 
+ }
+ 
+ 401 Unauthorized
+ 
+ body{
+ 
+  "msg" : "no Authentication"
+ 
+ }
+ 
+ ---
