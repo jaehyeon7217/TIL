@@ -136,7 +136,7 @@ Response를 반환할 때
 
 body{
 
-\t "status" : "success",
+ "status" : "success",
 
  "data" : {
  
