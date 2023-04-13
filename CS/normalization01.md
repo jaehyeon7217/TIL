@@ -30,15 +30,12 @@ end_time - start_time은 duration
 따라서 in_progress, duration은 필요없음
 
 # 2023-04-11 AM
-
+```
 Table_name : user
-
 column 1 : email(Pk) varchar
-
 column 2 : name varchar
-
 column 3 : gender boolean
-
+```
 
 
 PK를 VARCHAR로 쓸 때 문제점
@@ -218,3 +215,7 @@ body{
  }
  
  ---
+ 
+ - 게시판 댓글을 가져올 때 아무것도 없다면 
+ - Bad : 404 Not Found => 데이터가 없을 뿐 비 정상적인 상황은 아니기 때문에 에러를 반환하면 안된다. 
+ - Good : 200 OK Body []
