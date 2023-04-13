@@ -190,3 +190,25 @@ body{
  - Bad : 404 Not Found => 데이터가 없을 뿐 비 정상적인 상황은 아니기 때문에 에러를 반환하면 안된다. 
  - Good : 200 OK Body []
 ```
+---
+# 2023-04-13 PM
+
+- 게시판 글을 가져오는 경우
+```
+get - /api/article?userId=5
+```
+
+- 게시글 중 특정 시간 이후로 가져와라라는 뜻?
+```
+get - /api/article?userId=5&start=153030
+```
+- 모든 값을 가져 올 경우 바람직한 URL
+```
+get - /api/article
+```
+
+- 잘못 된 경우
+```
+/api/article/all , /api/article?userId=-1, /api/article?userId=all
+```
+---
