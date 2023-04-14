@@ -216,9 +216,10 @@ get - /api/article
 <img src="/images/KakaoTalk_20230414_092953060.jpg" width="700" height="700">
 
 - 게시판과 댓글을 요청하는 API
-
-1. <img src="/images/KakaoTalk_20230414_093235372.jpg" width="700" height="700">
-2. <img src="/images/KakaoTalk_20230414_093235372_01.jpg" width="700" height="700">
+## 1번 방법
+<center><img src="/images/KakaoTalk_20230414_093235372.jpg" width="700" height="700"></center>
+## 2번 방법
+<center><img src="/images/KakaoTalk_20230414_093235372_01.jpg" width="700" height="700"></center>
 
 - 1번 방법은 초반 설계 및 호출에 용이하다. 하지만 재사용하기 어렵다는 단점이 있다.
 - 2번 방법은 재사용에 용이하다. 하지만 호출에 시간이 오래 처리 될 수도 있다.
