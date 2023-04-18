@@ -224,3 +224,30 @@ get - /api/article
 
 - 1번 방법은 초반 설계 및 호출에 용이하다. 하지만 재사용하기 어렵다는 단점이 있다.
 - 2번 방법은 재사용에 용이하다. 하지만 호출에 시간이 오래 처리 될 수도 있다.
+
+---
+# 2023-04-18 AM
+
+JavaScript
+
+const -> 재 할당 X 재 선언 X
+```
+const text = 'test'
+text= 'abc' // error
+const text = 'ddd' // error
+```
+let -> 재 할당 O, 재 선언 X
+```
+let text = 'test'
+text= 'abc' // OK
+let text = 'ddd' // error
+```
+var -> 재 할당 O, 재 선언 O
+```
+var text = 'test'
+text= 'abc' // OK
+var text = 'ddd' // OK
+```
+가독성 const > let > var
+
+-> 값이 바뀌지 않기 때문에 가독성이 높아짐. => const를 제일 많이 쓰며 let까지만 사용하고 var는 안씀
