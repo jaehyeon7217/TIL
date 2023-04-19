@@ -251,3 +251,33 @@ var text = 'ddd' // OK
 가독성 const > let > var
 
 -> 값이 바뀌지 않기 때문에 가독성이 높아짐. => const를 제일 많이 쓰며 let까지만 사용하고 var는 안씀
+
+---
+# 2023-04-19 AM
+
+이터레이터 for문
+
+```
+// index read and write / break
+1. for(let i=0; i<array.length; ++i)
+console.log('basic' + array[i])
+
+// index read / break
+2. for(const i in array)
+ console.log('basic' + array[i])
+
+// break
+3. for(const v of array)
+ console.log('of ' + v)
+
+// break
+4. array.some( v=> {
+   console.log('some " + V)
+   return (v==3)
+   })
+   
+// all X
+5. array.forEach(v => console.log('each ' + v))
+
+1<2<3<4<5 가독성 (코드를 해석하는 경우의 수 ->  기능이 많을 수록 생각해야할 것이 많음 = 직관적이지 않음)
+```
