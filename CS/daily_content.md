@@ -281,3 +281,31 @@ console.log('basic' + array[i])
 
 1<2<3<4<5 가독성 (코드를 해석하는 경우의 수 ->  기능이 많을 수록 생각해야할 것이 많음 = 직관적이지 않음)
 ```
+# 2023-04-19 PM
+
+합수에서 null 처리를 할 때
+
+```
+drawLine(Point start, Point end){
+  if(start == null || end ==null)
+     return;
+  // ..
+  
+}
+  
+drawLine(start, end)
+
+// 성능 측면에서는 왼쪽이 좋음. 
+// 하지만 오동작을 일으킴 -> 프로그램은 죽지 않지만, 함수의 결과가 쓰레기 값이 나옴 -> 오동작
+---------------------------------
+
+drawLine(Point start, Point end){
+   // ..
+}
+
+if(start != null & end != null) // 이 라인이 없으면 프로그램이 죽음
+   drawLine(start, end)
+   // 잘못된 동작보다 프로그램이 죽는 것이 낫다.
+
+// 문제를 발견했을 때 오동작하게 되면 찾기도 힘들고 문제가 크다. 
+// 그렇기 때문에 프로그램이 죽는것이 훨씬 나을 수 있다.
