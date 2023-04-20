@@ -314,3 +314,59 @@ if(start != null & end != null) // 이 라인이 없으면 프로그램이 죽�
 => 프로그램이 오동작하여 기대하지 않는 값을 출력해 문제가 발생해도 못 찾는 것보다 프로그램을 죽여서 문제를 해결할 수 있는 것이 훨씬 더 좋다.
 
 ---
+# 2023-04-20 PM
+```
+public Authentication getAuthentication(HttpServletRequest request){
+ String token = request.getHeader("Authorization");
+ 
+ if(token != null){
+  JWTVerifier verifier = JwtTokenUtil.getVerifier();
+  DecodedJWT decodedJWT = verifier.verify(token);
+  String userID = decodedJWT.getSubject();
+  
+  if(userID != null){
+   UserProfile userProfile = UserProfileProvider.getByUserID(userID);
+   
+   if(userProfile != null){
+    Authentication authentication = new Authentication(userID, userProfile.getAuthorities());
+    return authentication;
+   }
+   return null;
+  }
+  return null;
+  }
+ return null;
+}
+```
+
+리턴 null의 반복이 많음 가독성이 떨어지고 프로그램 이해가 어려워 질 수 있음
+
+```
+public Authentication getAuthentication(HttpServletRequest request){
+ String token = request.getHeader("Authorization");
+ 
+ if(token == null)
+  return null;
+  
+ JWTVerifier verifier = JwtTokenUtil.getVerifier();
+ DecodedJWT decodedJWT = verifier.verify(token);
+ String userID = decodedJWT.getSubject();
+  
+ if(userID == null)
+  return null;
+  
+ UserProfile userProfile = UserProfileProvider.getByUserID(userID);
+   
+ if(userProfile == null)
+  return null;
+    
+ Authentication authentication = new Authentication(userID, userProfile.getAuthorities());
+ return authentication;
+}
+```
+
+훨씬 직관적이며 코드를 이해하기 쉬움
+
+return null을 한 번 줄일 수 있음
+
+---
