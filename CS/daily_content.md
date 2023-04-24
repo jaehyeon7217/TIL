@@ -370,3 +370,63 @@ public Authentication getAuthentication(HttpServletRequest request){
 return null을 한 번 줄일 수 있음
 
 ---
+# 2023-04-24 AM
+```
+class Line{
+ Point start;
+ Point end;
+ 
+ pulbic void setStart(Point point){
+  self.start = point;
+ }
+ 
+ public void setEnd(Point point){
+  self.end = point;
+ }
+ 
+ public void draw(){
+  if(self.start == null){
+   return;
+  }
+  
+  if(self.end == null){
+   return;
+  }
+  
+  // ...
+ }
+}
+
+int main(){
+ Line line = new Line();
+ line.setStart(new Point(10,10));
+ line.setEnd(new Point(20,40));
+ line.draw();
+}
+```
+
+다음과 같이 구성하면 null값이 올 수도 있고 애매한 상태가 되며 OOP관점으로 생성이 안됨.
+
+```
+class Line{
+ Point start;
+ Point end;
+ 
+ private Line(){} // null 값이 오는걸 방지하기 위해서 생성자는 private로 막아둠
+ 
+ public Line(Point start, Point end){
+  self.start = start;
+  self.end = end:
+ }
+ 
+ public void draw(){
+  //....
+ }
+}
+
+int main(){
+ Line line  = new Line(new Point(10,10), new Point(20,40));
+ line.draw();
+}
+```
+다음과 같이 구성하면 null값을 고민할 필요도 없고 무조건 값을 받은 Line 클래스만 들어온다.
