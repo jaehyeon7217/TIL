@@ -430,3 +430,58 @@ int main(){
 }
 ```
 다음과 같이 구성하면 null값을 고민할 필요도 없고 무조건 값을 받은 Line 클래스만 들어온다.
+
+---
+# 2023-04-24 PM
+
+``` 
+async function loadComments(article_id, page){
+ this.load_mutex = true;
+ 
+ const url = this.apiUrl + '/comments/article_id=' + article_id + '&page=' + page
+ const data = await this.axios.get(url)
+ 
+ this.commentsList.concat(data.data)
+ 
+ this.load_mutex = false
+}
+
+$(window).scroll(async function() {
+ 
+ if($(window).scrollTop() >= $(document).height - $(window).height()){
+  if(this.load_mutex){
+   alert('current is loadind')
+   return
+  }
+ }
+ 
+ awit this.loadComments(article_id, page)
+}
+```
+
+this.load_mutex가 중복됩니다. 이러면 코드 가독성이 떨어지니 하나의 function에 몰아서 구현합니다.
+
+```
+async function loadComments(article_id, page){
+ const url = this.apiUrl + '/comments/article_id=' + article_id + '&page=' + page
+ const data = awit this.axios.get(url)
+ 
+ this.commentsList.concat(data.data)
+}
+
+$(window).scroll(async function(){
+ 
+ if($(window).scrollTop() >= $(document).height() - $(window).height()){
+  if(this.load_mutex){
+   alert('current is loading')
+   return
+  }
+ }
+ 
+ this.load_mutex = true
+ await this.loadComments(article_id, page)
+ this.load_mutex = false
+}
+```
+
+아래처럼 하나의 function에 같은 이름의 변수를 몰아서 작성한다.
