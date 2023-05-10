@@ -11,6 +11,9 @@
 ### [GIT](https://github.com/jaehyeon7217/TIL/tree/main/git)
 - [특정 브랜치 클론 하는 법](https://github.com/jaehyeon7217/TIL/blob/main/git/branch_clone.md)
 
+### Algorithm
+- [Union-find](https://blog.naver.com/jhp1276/223098671390)
+
 ---
 ### [Effective java](https://github.com/jaehyeon7217/TIL/tree/main/effective_java)
 ### [01장](https://github.com/jaehyeon7217/TIL/tree/main/effective_java/1%EC%9E%A5)
