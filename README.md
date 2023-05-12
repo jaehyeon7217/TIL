@@ -14,6 +14,9 @@
 ### Algorithm
 - [Union-find](https://blog.naver.com/jhp1276/223098671390)
 
+### Spring Boot
+- [구글, 카카오 OAuth2 로그인 데이터 형식 (블로그 비공개)](https://blog.naver.com/jhp1276/223100598843)
+
 ---
 ### [Effective java](https://github.com/jaehyeon7217/TIL/tree/main/effective_java)
 ### [01장](https://github.com/jaehyeon7217/TIL/tree/main/effective_java/1%EC%9E%A5)
