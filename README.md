@@ -17,6 +17,9 @@
 ### Spring Boot
 - [구글, 카카오 OAuth2 로그인 데이터 형식 (블로그 비공개)](https://blog.naver.com/jhp1276/223100598843)
 
+### 코테 복기(비공개)
+- [현대 오토에버 2023년도 2분기 코테 복기(블로그 비공개)](https://blog.naver.com/jhp1276/223100946957)
+
 ---
 ### [Effective java](https://github.com/jaehyeon7217/TIL/tree/main/effective_java)
 ### [01장](https://github.com/jaehyeon7217/TIL/tree/main/effective_java/1%EC%9E%A5)
