@@ -13,6 +13,7 @@
 
 ### Algorithm
 - [Union-find](https://blog.naver.com/jhp1276/223098671390)
+- [누적합](https://blog.naver.com/jhp1276/223108378375)
 
 ### Spring Boot
 - [구글, 카카오 OAuth2 로그인 데이터 형식 (블로그 비공개)](https://blog.naver.com/jhp1276/223100598843)
@@ -22,6 +23,8 @@
 
 
 ### [방향성을 잡고 공부를 해봅시다.](https://blog.naver.com/PostView.naver?blogId=jhp1276&Redirect=View&logNo=223108348583&categoryNo=36&isAfterWrite=true&isMrblogPost=false&isHappyBeanLeverage=true&contentLength=33986)
+<br>
+
 
 
 
