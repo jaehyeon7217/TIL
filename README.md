@@ -3,10 +3,10 @@
 
 ---
 ### [CS](https://github.com/jaehyeon7217/TIL/tree/main/CS)
-- [test](https://github.com/jaehyeon7217/TIL/blob/main/CS/test.md)
 - [PWA](https://github.com/jaehyeon7217/TIL/blob/main/CS/PWA.md)
 - [convention](https://github.com/jaehyeon7217/TIL/blob/main/CS/conventions.md)
 - [daily_content](https://github.com/jaehyeon7217/TIL/blob/main/CS/daily_content.md)
+- [웹 애플리케이션이란?](https://blog.naver.com/PostView.naver?blogId=jhp1276&Redirect=View&logNo=223115112113&categoryNo=32&isAfterWrite=true&isMrblogPost=false&isHappyBeanLeverage=true&contentLength=25164)
 
 ### [GIT](https://github.com/jaehyeon7217/TIL/tree/main/git)
 - [특정 브랜치 클론 하는 법](https://github.com/jaehyeon7217/TIL/blob/main/git/branch_clone.md)
