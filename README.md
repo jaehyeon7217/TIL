@@ -20,6 +20,7 @@
 
 ### 코테 복기(비공개)
 - [현대 오토에버 2023년도 2분기 코테 복기(블로그 비공개)](https://blog.naver.com/jhp1276/223100946957)
+- [현대 오토에버 2023년도 인턴채용(블로그 비공개)](https://blog.naver.com/jhp1276/223119230499)
 
 
 ### [방향성을 잡고 공부를 해봅시다.](https://blog.naver.com/PostView.naver?blogId=jhp1276&Redirect=View&logNo=223108348583&categoryNo=36&isAfterWrite=true&isMrblogPost=false&isHappyBeanLeverage=true&contentLength=33986)
